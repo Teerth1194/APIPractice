@@ -1,0 +1,5 @@
+# Created at 2023-11-29T21:59:55.545
+Boot Manifest-JAR contains absolute paths in classpath 'H:\Teerth\Automation\APIPractice\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
