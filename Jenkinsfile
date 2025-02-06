@@ -5,19 +5,19 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the code'
-                bat "mav clean"
+                bat "mvn clean"
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing the code'
-                bat "mav test"
+                bat "mvn test"
             }
         }
         stage('Compile') {
              steps {
                  echo 'Testing the code'
-                 bat "mav compile"
+                 bat "mvn compile"
              }
         }
         stage('Deploy') {
