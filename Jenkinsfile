@@ -4,13 +4,21 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'Building the code'
+                bat "mav clean"
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                echo 'Testing the code'
+                bat "mav test"
             }
+        }
+        stage('Compile') {
+             steps {
+                 echo 'Testing the code'
+                 bat "mav compile"
+             }
         }
         stage('Deploy') {
             steps {
